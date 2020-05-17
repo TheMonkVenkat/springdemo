@@ -1,0 +1,31 @@
+package com.blackbox.springboot.crudappdemo.rest;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.blackbox.springboot.crudappdemo.dao.EmployeeDAO;
+import com.blackbox.springboot.crudappdemo.entity.Employe;
+
+@RestController
+@RequestMapping("/api")
+public class EmployeeRestController {
+	
+	private EmployeeDAO employeeDao;
+	
+	//Inject Employee dao
+	@Autowired
+	public EmployeeRestController(EmployeeDAO theEmployeeDao) {
+		this.employeeDao = theEmployeeDao;
+	}
+	
+	//expose "/employees" and return list of employees
+	@GetMapping("/employees")
+	public List<Employe> finaAll(){
+		return this.employeeDao.findAll();
+	}
+
+}

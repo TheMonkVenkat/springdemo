@@ -1,0 +1,40 @@
+package com.dev.ad3i;
+
+public class FindOutputDemo4 {
+
+	public static void main(String[] args)
+    {
+        OuterClass obj = new OuterClass();
+        obj.func();
+        obj.get();
+ 
+    }
+}
+
+class OuterClass
+{
+    int a = 1;
+    int b = 2;
+ 
+    void func()
+    {
+        InnerClass obj = new InnerClass();
+        obj.display();
+    }
+ 
+ 
+    class InnerClass
+    {
+        int b = 2;
+ 
+        void display()
+        {
+            System.out.println("na = " + a);
+        }
+    }
+ 
+    void get()
+    {
+        System.out.println("nb = " + b);
+    }
+}

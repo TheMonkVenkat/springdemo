@@ -1,0 +1,27 @@
+package com.dev.ad3i;
+
+public class FindOutputDemo7 {
+	
+	public static void main(String[] args)
+    {
+        Derived obj = new Derived();
+        obj.getDetails();
+    }
+}
+
+class Derived 
+{
+    protected final void getDetails()
+    {
+        System.out.println("Derived class");
+    }
+}
+ 
+class Test extends Derived
+{
+    protected final void getDetails()
+    {
+        System.out.println("Test class");
+    }
+    
+}

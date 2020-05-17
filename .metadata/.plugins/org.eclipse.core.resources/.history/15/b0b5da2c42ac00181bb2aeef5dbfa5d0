@@ -1,0 +1,10 @@
+package com.dev.ad3i;
+
+public class FindOutputDemo5 {
+
+	 public static void main(String args[]) {
+	      int x = 0;
+	      int y = 10;
+	      int z = y/x;
+	  }
+}

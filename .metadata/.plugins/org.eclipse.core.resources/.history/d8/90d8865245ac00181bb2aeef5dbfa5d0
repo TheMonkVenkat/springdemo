@@ -1,0 +1,35 @@
+package com.dev.ad3i;
+
+abstract class Writer {
+	public static void write() {
+		System.out.println("Writing...");
+	}
+	
+	public void print() {
+		System.out.println("Printing...");
+	}
+}
+
+class Author extends Writer {
+	public static void write() {
+		System.out.println("Writing book");
+	}
+	public void print() {
+		System.out.println("Printing Book...");
+	}
+}
+
+public class FindOutputDemo9 extends Writer {
+	public static void write() {
+		System.out.println("Writing code");
+	}
+	
+	public void print() {
+		System.out.println("Printing Code...");
+	}
+
+	public static void main(String[] args) {
+		Writer w = new FindOutputDemo9();
+		w.write();
+	}
+}

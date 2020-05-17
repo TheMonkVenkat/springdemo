@@ -1,0 +1,14 @@
+package com.blackbox.springboot.crudappdemo.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api")
+public class EmployeeRestController {
+	
+	//Inject Employee dao
+	
+	//expose "/employees" and return list of employees
+	
+
+}

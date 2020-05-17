@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-security-demo-07-user-roles/src/main/resources/persistence-sqlserver.sql&apos; to &apos;persistence-sqlserver.properties&apos;" description="Rename resource &apos;persistence-sqlserver.sql&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/persistence-sqlserver.sql" name="persistence-sqlserver.properties" stamp="1587102270890" updateReferences="true"/>
+</session>

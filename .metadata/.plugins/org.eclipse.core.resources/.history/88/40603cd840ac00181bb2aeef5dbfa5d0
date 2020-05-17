@@ -1,0 +1,21 @@
+package com.dev.ad3i;
+
+public class FindOutputDemo3 {
+
+}
+
+class demo
+{
+    int a, b;
+     
+    demo()
+    {
+        a = 10;
+        b = 20;
+    }
+     
+    public void print()
+    {
+        System.out.println ("a = " + a + " b = " + b + "n");
+    }
+}

@@ -1,0 +1,14 @@
+package com.dev.ad3i;
+
+public class FindOutputDemo8 {
+
+	public static void main(String[] args) {
+		
+		add();
+		add(2);
+	}
+	
+	private static void add(int... x) {
+		
+	}
+}

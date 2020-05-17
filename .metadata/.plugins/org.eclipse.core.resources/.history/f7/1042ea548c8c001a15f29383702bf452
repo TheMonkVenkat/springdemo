@@ -1,0 +1,7 @@
+#
+# JDBC properties
+#
+spring.datasource.driver=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=Hibernate
+spring.datasource.username=sa
+spring.datasource.password=123

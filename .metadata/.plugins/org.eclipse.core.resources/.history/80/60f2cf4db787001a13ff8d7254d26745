@@ -1,0 +1,44 @@
+package com.blackbox.springboot.crudappdemo.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Employee")
+public class Employee {
+
+	// define fields
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="ID")
+	private int ID;
+	
+	@Column(name="FirstName")
+	private String firstName;
+	
+	
+	@Column(name="FirstName")
+	private String lastName;
+	
+	@Column(name="Email")
+	private String email;
+
+	//Constructors
+	
+	public Employee() {
+
+	}
+
+	
+
+	//Setters & Getters
+	
+	
+	
+	
+}

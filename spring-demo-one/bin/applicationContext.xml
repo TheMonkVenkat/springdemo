@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+    <bean id="myLoggerConfig" class="com.blackbox.springdemo.MyLoggerConfig" init-method="initLogger">
+    	<property name="rootLoggerLevel" value="FINE" />
+    	<property name="printedLoggerLevel" value="FINE"/>
+    </bean>
+    
+    <!-- Load the properties file -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+    
+    <bean id="myFortuneService"
+    			class="com.blackbox.springdemo.GoodFortuneService" scope="singleton"/>
+    			
+    <bean id="myRandomFortuneService"
+    			class="com.blackbox.springdemo.RandomFortuneService" />
+    			
+    <bean id="myCricketCoach"
+    			class="com.blackbox.springdemo.CricketCoach">
+    			
+    	<property name="fortuneService" ref="myRandomFortuneService"/> <!-- ref for refer to an reference type Object -->
+    	<property name="emailAddress" value="${foo.emailAddress}" /> <!-- value for literals -->
+    	<property name="team" value="${foo.team}" />
+    
+    </bean>	
+    
+    <bean id="myCoach" 
+    		class="com.blackbox.springdemo.BaseballCoach" >
+    	<constructor-arg ref="myFortuneService"/>
+    </bean>
+    
+    
+    
+</beans>
+
+
+
+
+

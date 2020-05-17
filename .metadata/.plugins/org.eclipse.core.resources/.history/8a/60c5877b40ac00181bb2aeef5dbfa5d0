@@ -1,0 +1,22 @@
+package com.dev.ad3i;
+
+public class FindOutputDemo2 {
+
+	public static void main(String args[])
+    {
+        AD3iClass b; //line 12
+        b = new AD3iClass();
+    }
+}
+
+class AD3iClass
+{
+    // constructor
+    AD3iClass()
+    {
+        System.out.println("Geeksforgeeks");
+    }
+     
+    static AD3iClass a = new AD3iClass(); //line 8
+    
+}

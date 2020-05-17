@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=crud-app-demo/src\/main\/java&lt;com.blackbox.springboot.crudappdemo.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1587905202978"/>
+<typeInfo handle="=crud-app-demo/src\/main\/java&lt;com.blackbox.springboot.crudappdemo.dao{EmployeeDAO.java[EmployeeDAO" modifiers="513" timestamp="1587904550104"/>
+<typeInfo handle="=crud-app-demo/C:\/Users\/venkata.ramana\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.1.2.RELEASE\/spring-data-jpa-2.1.2.RELEASE.jar&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1587273246339"/>
+</typeInfoHistroy>

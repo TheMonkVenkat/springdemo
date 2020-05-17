@@ -1,0 +1,23 @@
+package com.dev.ad3i;
+
+//Choose all the lines which if inserted independently instead of "//Insert code here" will allow the following code to compile
+public class FindOutputDemo8 {
+
+	public static void main(String[] args) {
+		
+		add();
+		add("AD3i");
+	}
+	
+	private static void add(int... x) {
+		
+	}
+}
+
+//void add(String... args){}
+//static void add(String... args, int y){}
+//static void add(String args...){}
+//static void add(String[]... args){}
+//static void add(String...args){}
+ 
+

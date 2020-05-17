@@ -1,0 +1,11 @@
+package com.blackbox.springsecurity.demo.dao;
+
+
+
+public interface UserDao {
+
+    public User findByUserName(String userName);
+    
+    public void save(User user);
+    
+}

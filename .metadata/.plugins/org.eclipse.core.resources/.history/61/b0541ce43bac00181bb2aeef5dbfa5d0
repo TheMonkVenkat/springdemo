@@ -1,0 +1,13 @@
+package com.dev.ad3i;
+
+class A
+{
+    public Top(String s) 
+    {
+        System.out.print("A");
+    }
+}
+
+public class InheritanceDemo1 {
+
+}

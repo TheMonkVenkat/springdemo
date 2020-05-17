@@ -1,0 +1,9 @@
+package com.blackbox.springboot.crudappdemo.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.blackbox.springboot.crudappdemo.entity.Employee;
+
+public class EmployeeDAOSpringHJPAImpl implements JpaRepository<Employee, Integer> {
+
+}

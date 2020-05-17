@@ -1,0 +1,59 @@
+package com.blackbox.springboot.thymeleafdemo.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.blackbox.springboot.crudappdemo.dao.EmployeeDAOSpringHJPARepository;
+import com.blackbox.springboot.thymeleafdemo.dao.EmployeeDAO;
+import com.blackbox.springboot.thymeleafdemo.model.Employee;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+	
+//	@Autowired
+//	@Qualifier("employeeDAOJPAImpl")
+//	private EmployeeDAO emplyeeDAO;
+	
+	private EmployeeDAO employeeRepository;
+	
+	@Autowired
+	public EmployeeServiceImpl(EmployeeDAO theEmployeeRepository) {
+		this.employeeRepository = theEmployeeRepository;
+	}
+
+	@Override
+//	@Transactional
+	public List<Employee> findAll() {
+//		return this.emplyeeDAO.findAll();
+		return this.employeeRepository.findAll();
+	}
+
+	@Override
+//	@Transactional
+	public Employee findByID(int id) {
+//		return this.emplyeeDAO.findByID(id);
+		Employee theEmployee = this.employeeRepository.findByID(id);
+		if(theEmployee == null){
+			throw new RuntimeException("Didn't find the employee id - " + id);
+		}
+		return theEmployee;
+	}
+
+	@Override
+//	@Transactional
+	public void save(Employee theEmployee) {
+//		this.emplyeeDAO.save(theEmployee);
+		this.employeeRepository.save(theEmployee);
+	}
+
+	@Override
+//	@Transactional
+	public void deleteById(int id) {
+//		this.emplyeeDAO.deleteById(id);
+		this.employeeRepository.deleteById(id);
+	}
+
+}

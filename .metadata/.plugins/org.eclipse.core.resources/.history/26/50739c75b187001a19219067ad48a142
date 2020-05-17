@@ -1,0 +1,6 @@
+#
+# JDBC Properties
+#
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=Hibernate
+spring.datasoure.username=sa
+spring.datasource.password=123

@@ -1,0 +1,28 @@
+package com.dev.ad3i;
+
+public class FindOutputDemo6 {
+
+	public static void main(String[] args) {
+		// some other stuff
+		   try {
+		       // Some monitored code
+		       throw new Derived();
+		    }
+		    catch(Base b)     { 
+		       System.out.println("Caught base class exception"); 
+		    }
+		    catch(Derived d)  { 
+		       System.out.println("Caught derived class exception"); 
+		    }
+	}
+
+}
+
+class Base extends Exception {}
+class Derived extends Base  {}
+
+
+//Caught base class exception
+//Caught derived class exceptio
+//Compiler Error because derived is not throwable
+//Compiler Error because base class exception is caught before derived class

@@ -1,0 +1,22 @@
+package com.dev.ad3i;
+
+class SupreClass
+{
+    public Top(String s) 
+    {
+        System.out.print("A");
+    }
+}
+
+public class InheritanceDemo1 extends SupreClass {
+	public InheritanceDemo1(String s) 
+    {
+		Top(s);
+        System.out.print("B");
+    }
+    public static void main(String[] args) 
+    {
+        new InheritanceDemo1("C");
+        System.out.println(" ");
+    }
+}

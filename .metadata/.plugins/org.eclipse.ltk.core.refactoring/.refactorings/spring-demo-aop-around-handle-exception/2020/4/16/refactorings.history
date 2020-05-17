@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;AroundAspectWithLoggerDemoApp.java&apos; to &apos;com.blackbox.aopdemo.AroundAspectWithLoggerDemoApp.java&apos;&#x0D;&#x0A;- Original project: &apos;spring-demo-aop-around-handle-exception&apos;&#x0D;&#x0A;- Destination element: &apos;com.blackbox.aopdemo.AroundAspectWithLoggerDemoApp.java&apos;&#x0D;&#x0A;- Original element: &apos;com.blackbox.aopdemo.AroundAspectWithLoggerDemoApp.java&apos;" description="Copy compilation unit" destination="/src&lt;com.blackbox.aopdemo{AroundAspectWithLoggerDemoApp.java" element1="/src&lt;com.blackbox.aopdemo{AroundAspectWithLoggerDemoApp.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1586673611767" units="1" version="1.0"/>
+</session>

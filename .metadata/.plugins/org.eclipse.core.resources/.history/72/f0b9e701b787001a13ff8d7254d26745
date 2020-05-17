@@ -1,0 +1,47 @@
+package com.blackbox.springboot.crudappdemo.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
+
+import org.hibernate.Session;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.blackbox.springboot.crudappdemo.entity.Employe;
+
+@Repository
+public class EmployeeDAOHibernateImpl implements EmployeeDAO {
+	
+	private EntityManager entityManager;
+	
+	//Set up constructor injection
+	
+	@Autowired
+	public EmployeeDAOHibernateImpl(EntityManager theEntityManager) {
+		this.entityManager = theEntityManager;
+	}
+
+
+
+	@Override
+	@Transactional
+	public List<Employe> findAll() {
+
+		//Get the current hibernate session
+		Session theSession = this.entityManager.unwrap(Session.class);
+		
+		//Create the query
+		Query<Employe> theQuery = theSession.createQuery("from  Employe", Employe.class);
+		
+		
+		//Execute the query and get the results
+		List<Employe> employees = theQuery.getResultList();
+		
+		//return resutls
+		return employees;
+	}
+
+}

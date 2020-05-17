@@ -1,0 +1,11 @@
+package com.blackbox.springboot.crudappdemo.dao;
+
+import java.util.List;
+
+import com.blackbox.springboot.crudappdemo.entity.Employee;
+
+public interface EmployeeDAO {
+	
+	public List<Employee> findAll();
+
+}
